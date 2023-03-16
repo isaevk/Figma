@@ -9,13 +9,26 @@
 /* Begin PBXBuildFile section */
 		18E3EE2B29BEEBFC00D1C44F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE2A29BEEBFC00D1C44F /* AppDelegate.swift */; };
 		18E3EE2D29BEEBFC00D1C44F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE2C29BEEBFC00D1C44F /* SceneDelegate.swift */; };
-		18E3EE2F29BEEBFC00D1C44F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE2E29BEEBFC00D1C44F /* ViewController.swift */; };
+		18E3EE2F29BEEBFC00D1C44F /* SingInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE2E29BEEBFC00D1C44F /* SingInViewController.swift */; };
 		18E3EE3229BEEBFC00D1C44F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE3029BEEBFC00D1C44F /* Main.storyboard */; };
 		18E3EE3429BEEBFD00D1C44F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE3329BEEBFD00D1C44F /* Assets.xcassets */; };
 		18E3EE3729BEEBFD00D1C44F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE3529BEEBFD00D1C44F /* LaunchScreen.storyboard */; };
 		18E3EE4229BEEBFE00D1C44F /* FigmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE4129BEEBFE00D1C44F /* FigmaTests.swift */; };
 		18E3EE4C29BEEBFE00D1C44F /* FigmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE4B29BEEBFE00D1C44F /* FigmaUITests.swift */; };
 		18E3EE4E29BEEBFE00D1C44F /* FigmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE4D29BEEBFE00D1C44F /* FigmaUITestsLaunchTests.swift */; };
+		18E3EE6029C1976C00D1C44F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE5F29C1976C00D1C44F /* LoginViewController.swift */; };
+		18E3EE6329C19B9000D1C44F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE6229C19B9000D1C44F /* HomeViewController.swift */; };
+		18E3EE6629C19C0C00D1C44F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE6529C19C0C00D1C44F /* MainTabBarController.swift */; };
+		18E3EE6929C19EA100D1C44F /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE6829C19EA100D1C44F /* UIColor+.swift */; };
+		18E3EE6C29C19F9500D1C44F /* LikeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE6B29C19F9500D1C44F /* LikeListViewController.swift */; };
+		18E3EE6F29C1A33A00D1C44F /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE6E29C1A33A00D1C44F /* CartViewController.swift */; };
+		18E3EE7229C1A3BA00D1C44F /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7129C1A3BA00D1C44F /* DialogsViewController.swift */; };
+		18E3EE7629C1A4CB00D1C44F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7429C1A4CB00D1C44F /* ProfileViewController.swift */; };
+		18E3EE7729C1A4CB00D1C44F /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE7529C1A4CB00D1C44F /* ProfileViewController.xib */; };
+		18E3EE7929C2DE9F00D1C44F /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE7829C2DE9F00D1C44F /* LoginViewController.storyboard */; };
+		18E3EE7B29C3016A00D1C44F /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7A29C3016A00D1C44F /* KeychainManager.swift */; };
+		18E3EE7D29C30D0800D1C44F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7C29C30D0800D1C44F /* Profile.swift */; };
+		18E3EE7F29C30F7C00D1C44F /* UIViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7E29C30F7C00D1C44F /* UIViewController + Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +52,7 @@
 		18E3EE2729BEEBFC00D1C44F /* Figma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Figma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E3EE2A29BEEBFC00D1C44F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E3EE2C29BEEBFC00D1C44F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18E3EE2E29BEEBFC00D1C44F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18E3EE2E29BEEBFC00D1C44F /* SingInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInViewController.swift; sourceTree = "<group>"; };
 		18E3EE3129BEEBFC00D1C44F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18E3EE3329BEEBFD00D1C44F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E3EE3629BEEBFD00D1C44F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +62,19 @@
 		18E3EE4729BEEBFE00D1C44F /* FigmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FigmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E3EE4B29BEEBFE00D1C44F /* FigmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaUITests.swift; sourceTree = "<group>"; };
 		18E3EE4D29BEEBFE00D1C44F /* FigmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18E3EE5F29C1976C00D1C44F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18E3EE6229C19B9000D1C44F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18E3EE6529C19C0C00D1C44F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		18E3EE6829C19EA100D1C44F /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		18E3EE6B29C19F9500D1C44F /* LikeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListViewController.swift; sourceTree = "<group>"; };
+		18E3EE6E29C1A33A00D1C44F /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		18E3EE7129C1A3BA00D1C44F /* DialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
+		18E3EE7429C1A4CB00D1C44F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		18E3EE7529C1A4CB00D1C44F /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		18E3EE7829C2DE9F00D1C44F /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		18E3EE7A29C3016A00D1C44F /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		18E3EE7C29C30D0800D1C44F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		18E3EE7E29C30F7C00D1C44F /* UIViewController + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +125,18 @@
 		18E3EE2929BEEBFC00D1C44F /* Figma */ = {
 			isa = PBXGroup;
 			children = (
-				18E3EE2A29BEEBFC00D1C44F /* AppDelegate.swift */,
-				18E3EE2C29BEEBFC00D1C44F /* SceneDelegate.swift */,
-				18E3EE2E29BEEBFC00D1C44F /* ViewController.swift */,
-				18E3EE3029BEEBFC00D1C44F /* Main.storyboard */,
-				18E3EE3329BEEBFD00D1C44F /* Assets.xcassets */,
+				18E3EE5B29C1921A00D1C44F /* Application */,
+				18E3EE5A29C1918600D1C44F /* SingInViewController */,
+				18E3EE5C29C1967E00D1C44F /* LogInViewController */,
+				18E3EE6429C19BDD00D1C44F /* MainTabBarController */,
+				18E3EE6129C19B5D00D1C44F /* HomeViewController */,
+				18E3EE6A29C19F5B00D1C44F /* LikeListViewController */,
+				18E3EE6D29C1A2EA00D1C44F /* СartViewController */,
+				18E3EE7029C1A39300D1C44F /* DialogsViewController */,
+				18E3EE7329C1A49E00D1C44F /* ProfileViewController */,
+				18E3EE6729C19E8500D1C44F /* Helper */,
 				18E3EE3529BEEBFD00D1C44F /* LaunchScreen.storyboard */,
+				18E3EE3329BEEBFD00D1C44F /* Assets.xcassets */,
 				18E3EE3829BEEBFD00D1C44F /* Info.plist */,
 			);
 			path = Figma;
@@ -125,6 +157,93 @@
 				18E3EE4D29BEEBFE00D1C44F /* FigmaUITestsLaunchTests.swift */,
 			);
 			path = FigmaUITests;
+			sourceTree = "<group>";
+		};
+		18E3EE5A29C1918600D1C44F /* SingInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EE2E29BEEBFC00D1C44F /* SingInViewController.swift */,
+				18E3EE7C29C30D0800D1C44F /* Profile.swift */,
+				18E3EE3029BEEBFC00D1C44F /* Main.storyboard */,
+			);
+			path = SingInViewController;
+			sourceTree = "<group>";
+		};
+		18E3EE5B29C1921A00D1C44F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EE2A29BEEBFC00D1C44F /* AppDelegate.swift */,
+				18E3EE2C29BEEBFC00D1C44F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		18E3EE5C29C1967E00D1C44F /* LogInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EE5F29C1976C00D1C44F /* LoginViewController.swift */,
+				18E3EE7829C2DE9F00D1C44F /* LoginViewController.storyboard */,
+			);
+			path = LogInViewController;
+			sourceTree = "<group>";
+		};
+		18E3EE6129C19B5D00D1C44F /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EE6229C19B9000D1C44F /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		18E3EE6429C19BDD00D1C44F /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EE6529C19C0C00D1C44F /* MainTabBarController.swift */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		18E3EE6729C19E8500D1C44F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EE6829C19EA100D1C44F /* UIColor+.swift */,
+				18E3EE7A29C3016A00D1C44F /* KeychainManager.swift */,
+				18E3EE7E29C30F7C00D1C44F /* UIViewController + Alert.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		18E3EE6A29C19F5B00D1C44F /* LikeListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EE6B29C19F9500D1C44F /* LikeListViewController.swift */,
+			);
+			path = LikeListViewController;
+			sourceTree = "<group>";
+		};
+		18E3EE6D29C1A2EA00D1C44F /* СartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EE6E29C1A33A00D1C44F /* CartViewController.swift */,
+			);
+			path = "СartViewController";
+			sourceTree = "<group>";
+		};
+		18E3EE7029C1A39300D1C44F /* DialogsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EE7129C1A3BA00D1C44F /* DialogsViewController.swift */,
+			);
+			path = DialogsViewController;
+			sourceTree = "<group>";
+		};
+		18E3EE7329C1A49E00D1C44F /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EE7429C1A4CB00D1C44F /* ProfileViewController.swift */,
+				18E3EE7529C1A4CB00D1C44F /* ProfileViewController.xib */,
+			);
+			path = ProfileViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +352,8 @@
 			files = (
 				18E3EE3729BEEBFD00D1C44F /* LaunchScreen.storyboard in Resources */,
 				18E3EE3429BEEBFD00D1C44F /* Assets.xcassets in Resources */,
+				18E3EE7929C2DE9F00D1C44F /* LoginViewController.storyboard in Resources */,
+				18E3EE7729C1A4CB00D1C44F /* ProfileViewController.xib in Resources */,
 				18E3EE3229BEEBFC00D1C44F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +379,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E3EE2F29BEEBFC00D1C44F /* ViewController.swift in Sources */,
+				18E3EE6329C19B9000D1C44F /* HomeViewController.swift in Sources */,
+				18E3EE6029C1976C00D1C44F /* LoginViewController.swift in Sources */,
+				18E3EE6629C19C0C00D1C44F /* MainTabBarController.swift in Sources */,
+				18E3EE7D29C30D0800D1C44F /* Profile.swift in Sources */,
+				18E3EE2F29BEEBFC00D1C44F /* SingInViewController.swift in Sources */,
+				18E3EE7F29C30F7C00D1C44F /* UIViewController + Alert.swift in Sources */,
 				18E3EE2B29BEEBFC00D1C44F /* AppDelegate.swift in Sources */,
 				18E3EE2D29BEEBFC00D1C44F /* SceneDelegate.swift in Sources */,
+				18E3EE7629C1A4CB00D1C44F /* ProfileViewController.swift in Sources */,
+				18E3EE7B29C3016A00D1C44F /* KeychainManager.swift in Sources */,
+				18E3EE7229C1A3BA00D1C44F /* DialogsViewController.swift in Sources */,
+				18E3EE6929C19EA100D1C44F /* UIColor+.swift in Sources */,
+				18E3EE6F29C1A33A00D1C44F /* CartViewController.swift in Sources */,
+				18E3EE6C29C19F9500D1C44F /* LikeListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +577,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +606,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
