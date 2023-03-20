@@ -1,20 +1,20 @@
 //
-//  DialogsViewController.swift
+//  BasketViewController.swift
 //  Figma
 //
-//  Created by Kirill Dev on 15.03.2023.
+//  Created by Kirill Dev on 20.03.2023.
 //
 
 import UIKit
 
-final class DialogsViewController: UIViewController {
+class BasketViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation

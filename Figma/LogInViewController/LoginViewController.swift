@@ -37,19 +37,20 @@ final class LoginViewController: UIViewController {
   
   
   @IBAction private func loginAction(_ sender: Any) {
-    guard let email = emailTxtField.text else { return }
+//    guard let email = emailTxtField.text else { return }
+//    
+//    guard let data = KeychainManager.get(service: "Figma", account: email) else {
+//      print("Failed to read password")
+//      return
+//    }
+//    let password = String(decoding: data, as: UTF8.self)
+//    print(password)
+//    passwordTxtField.text = password
     
-    guard let data = KeychainManager.get(service: "Figma", account: email) else {
-      print("Failed to read password")
-      return
-    }
-    let password = String(decoding: data, as: UTF8.self)
-    print(password)
-    passwordTxtField.text = password
-    
-    
-    let tabBar = MainTabBarController()
-    self.present(tabBar, animated: true)
+    let storyboard = UIStoryboard(name: "MainTabBarController", bundle: nil)
+    let vc = storyboard.instantiateViewController(withIdentifier: "mainTabBar")
+    vc.modalPresentationStyle = .fullScreen
+    present(vc, animated: true)
   }
   
   

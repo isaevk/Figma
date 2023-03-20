@@ -23,7 +23,7 @@ final class SingInViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+
   }
 
   
@@ -39,16 +39,12 @@ final class SingInViewController: UIViewController {
       
       
     } catch {
-      showAlert("This account is already registered", message: "You can log in by clicking Log In")
+      showAlert("This account is already registered",
+                message: "You can log in by clicking Log In")
       print(error)
     }
     
   }
-  
-  
-  
-  
-  
   
   
   @IBAction func logInAction(_ sender: Any) {

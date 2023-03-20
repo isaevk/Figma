@@ -17,18 +17,25 @@
 		18E3EE4C29BEEBFE00D1C44F /* FigmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE4B29BEEBFE00D1C44F /* FigmaUITests.swift */; };
 		18E3EE4E29BEEBFE00D1C44F /* FigmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE4D29BEEBFE00D1C44F /* FigmaUITestsLaunchTests.swift */; };
 		18E3EE6029C1976C00D1C44F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE5F29C1976C00D1C44F /* LoginViewController.swift */; };
-		18E3EE6329C19B9000D1C44F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE6229C19B9000D1C44F /* HomeViewController.swift */; };
 		18E3EE6629C19C0C00D1C44F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE6529C19C0C00D1C44F /* MainTabBarController.swift */; };
 		18E3EE6929C19EA100D1C44F /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE6829C19EA100D1C44F /* UIColor+.swift */; };
-		18E3EE6C29C19F9500D1C44F /* LikeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE6B29C19F9500D1C44F /* LikeListViewController.swift */; };
-		18E3EE6F29C1A33A00D1C44F /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE6E29C1A33A00D1C44F /* CartViewController.swift */; };
-		18E3EE7229C1A3BA00D1C44F /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7129C1A3BA00D1C44F /* DialogsViewController.swift */; };
 		18E3EE7629C1A4CB00D1C44F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7429C1A4CB00D1C44F /* ProfileViewController.swift */; };
 		18E3EE7729C1A4CB00D1C44F /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE7529C1A4CB00D1C44F /* ProfileViewController.xib */; };
 		18E3EE7929C2DE9F00D1C44F /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE7829C2DE9F00D1C44F /* LoginViewController.storyboard */; };
 		18E3EE7B29C3016A00D1C44F /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7A29C3016A00D1C44F /* KeychainManager.swift */; };
 		18E3EE7D29C30D0800D1C44F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7C29C30D0800D1C44F /* Profile.swift */; };
 		18E3EE7F29C30F7C00D1C44F /* UIViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7E29C30F7C00D1C44F /* UIViewController + Alert.swift */; };
+		18E3EE8129C4858900D1C44F /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE8029C4858900D1C44F /* MainTabBarController.storyboard */; };
+		18E3EE8329C48DA200D1C44F /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE8229C48DA200D1C44F /* UserDefaultsService.swift */; };
+		18E3EE8E29C838F300D1C44F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE8C29C838F300D1C44F /* HomeViewController.swift */; };
+		18E3EE8F29C838F300D1C44F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE8D29C838F300D1C44F /* HomeViewController.xib */; };
+		18E3EE9229C83A0800D1C44F /* LikeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE9029C83A0800D1C44F /* LikeListViewController.swift */; };
+		18E3EE9329C83A0800D1C44F /* LikeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE9129C83A0800D1C44F /* LikeListViewController.xib */; };
+		18E3EE9629C83A6500D1C44F /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE9429C83A6500D1C44F /* BasketViewController.swift */; };
+		18E3EE9729C83A6500D1C44F /* BasketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE9529C83A6500D1C44F /* BasketViewController.xib */; };
+		18E3EE9A29C83AA300D1C44F /* DialoguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE9829C83AA300D1C44F /* DialoguesViewController.swift */; };
+		18E3EE9B29C83AA300D1C44F /* DialoguesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE9929C83AA300D1C44F /* DialoguesViewController.xib */; };
+		18E3EE9D29C84A8900D1C44F /* FigmaNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE9C29C84A8900D1C44F /* FigmaNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,18 +70,25 @@
 		18E3EE4B29BEEBFE00D1C44F /* FigmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaUITests.swift; sourceTree = "<group>"; };
 		18E3EE4D29BEEBFE00D1C44F /* FigmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18E3EE5F29C1976C00D1C44F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		18E3EE6229C19B9000D1C44F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18E3EE6529C19C0C00D1C44F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		18E3EE6829C19EA100D1C44F /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		18E3EE6B29C19F9500D1C44F /* LikeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListViewController.swift; sourceTree = "<group>"; };
-		18E3EE6E29C1A33A00D1C44F /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
-		18E3EE7129C1A3BA00D1C44F /* DialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
 		18E3EE7429C1A4CB00D1C44F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		18E3EE7529C1A4CB00D1C44F /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		18E3EE7829C2DE9F00D1C44F /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		18E3EE7A29C3016A00D1C44F /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		18E3EE7C29C30D0800D1C44F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		18E3EE7E29C30F7C00D1C44F /* UIViewController + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Alert.swift"; sourceTree = "<group>"; };
+		18E3EE8029C4858900D1C44F /* MainTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBarController.storyboard; sourceTree = "<group>"; };
+		18E3EE8229C48DA200D1C44F /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		18E3EE8C29C838F300D1C44F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18E3EE8D29C838F300D1C44F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		18E3EE9029C83A0800D1C44F /* LikeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListViewController.swift; sourceTree = "<group>"; };
+		18E3EE9129C83A0800D1C44F /* LikeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeListViewController.xib; sourceTree = "<group>"; };
+		18E3EE9429C83A6500D1C44F /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		18E3EE9529C83A6500D1C44F /* BasketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketViewController.xib; sourceTree = "<group>"; };
+		18E3EE9829C83AA300D1C44F /* DialoguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialoguesViewController.swift; sourceTree = "<group>"; };
+		18E3EE9929C83AA300D1C44F /* DialoguesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialoguesViewController.xib; sourceTree = "<group>"; };
+		18E3EE9C29C84A8900D1C44F /* FigmaNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +145,8 @@
 				18E3EE6429C19BDD00D1C44F /* MainTabBarController */,
 				18E3EE6129C19B5D00D1C44F /* HomeViewController */,
 				18E3EE6A29C19F5B00D1C44F /* LikeListViewController */,
-				18E3EE6D29C1A2EA00D1C44F /* СartViewController */,
-				18E3EE7029C1A39300D1C44F /* DialogsViewController */,
+				18E3EE6D29C1A2EA00D1C44F /* BasketViewController */,
+				18E3EE7029C1A39300D1C44F /* DialoguesViewController */,
 				18E3EE7329C1A49E00D1C44F /* ProfileViewController */,
 				18E3EE6729C19E8500D1C44F /* Helper */,
 				18E3EE3529BEEBFD00D1C44F /* LaunchScreen.storyboard */,
@@ -190,7 +204,8 @@
 		18E3EE6129C19B5D00D1C44F /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				18E3EE6229C19B9000D1C44F /* HomeViewController.swift */,
+				18E3EE8C29C838F300D1C44F /* HomeViewController.swift */,
+				18E3EE8D29C838F300D1C44F /* HomeViewController.xib */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -199,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				18E3EE6529C19C0C00D1C44F /* MainTabBarController.swift */,
+				18E3EE8029C4858900D1C44F /* MainTabBarController.storyboard */,
 			);
 			path = MainTabBarController;
 			sourceTree = "<group>";
@@ -209,6 +225,8 @@
 				18E3EE6829C19EA100D1C44F /* UIColor+.swift */,
 				18E3EE7A29C3016A00D1C44F /* KeychainManager.swift */,
 				18E3EE7E29C30F7C00D1C44F /* UIViewController + Alert.swift */,
+				18E3EE8229C48DA200D1C44F /* UserDefaultsService.swift */,
+				18E3EE9C29C84A8900D1C44F /* FigmaNavigationBar.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -216,25 +234,28 @@
 		18E3EE6A29C19F5B00D1C44F /* LikeListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				18E3EE6B29C19F9500D1C44F /* LikeListViewController.swift */,
+				18E3EE9029C83A0800D1C44F /* LikeListViewController.swift */,
+				18E3EE9129C83A0800D1C44F /* LikeListViewController.xib */,
 			);
 			path = LikeListViewController;
 			sourceTree = "<group>";
 		};
-		18E3EE6D29C1A2EA00D1C44F /* СartViewController */ = {
+		18E3EE6D29C1A2EA00D1C44F /* BasketViewController */ = {
 			isa = PBXGroup;
 			children = (
-				18E3EE6E29C1A33A00D1C44F /* CartViewController.swift */,
+				18E3EE9429C83A6500D1C44F /* BasketViewController.swift */,
+				18E3EE9529C83A6500D1C44F /* BasketViewController.xib */,
 			);
-			path = "СartViewController";
+			path = BasketViewController;
 			sourceTree = "<group>";
 		};
-		18E3EE7029C1A39300D1C44F /* DialogsViewController */ = {
+		18E3EE7029C1A39300D1C44F /* DialoguesViewController */ = {
 			isa = PBXGroup;
 			children = (
-				18E3EE7129C1A3BA00D1C44F /* DialogsViewController.swift */,
+				18E3EE9829C83AA300D1C44F /* DialoguesViewController.swift */,
+				18E3EE9929C83AA300D1C44F /* DialoguesViewController.xib */,
 			);
-			path = DialogsViewController;
+			path = DialoguesViewController;
 			sourceTree = "<group>";
 		};
 		18E3EE7329C1A49E00D1C44F /* ProfileViewController */ = {
@@ -350,11 +371,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E3EE9B29C83AA300D1C44F /* DialoguesViewController.xib in Resources */,
 				18E3EE3729BEEBFD00D1C44F /* LaunchScreen.storyboard in Resources */,
 				18E3EE3429BEEBFD00D1C44F /* Assets.xcassets in Resources */,
+				18E3EE9729C83A6500D1C44F /* BasketViewController.xib in Resources */,
 				18E3EE7929C2DE9F00D1C44F /* LoginViewController.storyboard in Resources */,
+				18E3EE8129C4858900D1C44F /* MainTabBarController.storyboard in Resources */,
+				18E3EE8F29C838F300D1C44F /* HomeViewController.xib in Resources */,
 				18E3EE7729C1A4CB00D1C44F /* ProfileViewController.xib in Resources */,
 				18E3EE3229BEEBFC00D1C44F /* Main.storyboard in Resources */,
+				18E3EE9329C83A0800D1C44F /* LikeListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,20 +405,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E3EE6329C19B9000D1C44F /* HomeViewController.swift in Sources */,
+				18E3EE9629C83A6500D1C44F /* BasketViewController.swift in Sources */,
 				18E3EE6029C1976C00D1C44F /* LoginViewController.swift in Sources */,
 				18E3EE6629C19C0C00D1C44F /* MainTabBarController.swift in Sources */,
 				18E3EE7D29C30D0800D1C44F /* Profile.swift in Sources */,
+				18E3EE9229C83A0800D1C44F /* LikeListViewController.swift in Sources */,
 				18E3EE2F29BEEBFC00D1C44F /* SingInViewController.swift in Sources */,
 				18E3EE7F29C30F7C00D1C44F /* UIViewController + Alert.swift in Sources */,
 				18E3EE2B29BEEBFC00D1C44F /* AppDelegate.swift in Sources */,
 				18E3EE2D29BEEBFC00D1C44F /* SceneDelegate.swift in Sources */,
 				18E3EE7629C1A4CB00D1C44F /* ProfileViewController.swift in Sources */,
+				18E3EE8E29C838F300D1C44F /* HomeViewController.swift in Sources */,
+				18E3EE9A29C83AA300D1C44F /* DialoguesViewController.swift in Sources */,
+				18E3EE9D29C84A8900D1C44F /* FigmaNavigationBar.swift in Sources */,
 				18E3EE7B29C3016A00D1C44F /* KeychainManager.swift in Sources */,
-				18E3EE7229C1A3BA00D1C44F /* DialogsViewController.swift in Sources */,
+				18E3EE8329C48DA200D1C44F /* UserDefaultsService.swift in Sources */,
 				18E3EE6929C19EA100D1C44F /* UIColor+.swift in Sources */,
-				18E3EE6F29C1A33A00D1C44F /* CartViewController.swift in Sources */,
-				18E3EE6C29C19F9500D1C44F /* LikeListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
