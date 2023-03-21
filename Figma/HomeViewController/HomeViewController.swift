@@ -9,21 +9,23 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var navigationBar: UINavigationBar!
+  
+
+  
+  
+  @IBOutlet weak var burgerMenuNavBar: UIBarButtonItem!
+  
+  
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//    navigationBar.largeContentImage = UIImage(named: "navBar_logo")
+    navigationBar.setBackgroundImage(UIImage(named: "navBar_logo"), for: .compact)
+    burgerMenuNavBar.image = UIImage(named: "burger_menu")
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
