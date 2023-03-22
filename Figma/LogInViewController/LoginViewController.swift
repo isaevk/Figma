@@ -20,7 +20,6 @@ final class LoginViewController: UIViewController {
   
   override func viewDidLoad() {
         super.viewDidLoad()
-    
     }
     
 
@@ -37,21 +36,22 @@ final class LoginViewController: UIViewController {
   
   
   @IBAction private func loginAction(_ sender: Any) {
-//    guard let email = emailTxtField.text else { return }
-//    
-//    guard let data = KeychainManager.get(service: "Figma", account: email) else {
-//      print("Failed to read password")
-//      return
-//    }
-//    let password = String(decoding: data, as: UTF8.self)
-//    print(password)
-//    passwordTxtField.text = password
+    guard let email = emailTxtField.text else { return }
+
+    guard let data = KeychainManager.get(service: "figma.com", account: email) else {
+      showAlert("There is no user with this password", message: "Try again")
+      return
+    }
+
+    let password = String(decoding: data, as: UTF8.self)
+    
+    if passwordTxtField.text != password {
+      showAlert("Wrong password entered", message: "Try again")
+    }
     
     let storyboard = UIStoryboard(name: "MainTabBarController", bundle: nil)
     let vc = storyboard.instantiateViewController(withIdentifier: "mainTabBar")
     vc.modalPresentationStyle = .fullScreen
     present(vc, animated: true)
   }
-  
-  
 }

@@ -23,7 +23,7 @@
 		18E3EE7729C1A4CB00D1C44F /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE7529C1A4CB00D1C44F /* ProfileViewController.xib */; };
 		18E3EE7929C2DE9F00D1C44F /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE7829C2DE9F00D1C44F /* LoginViewController.storyboard */; };
 		18E3EE7B29C3016A00D1C44F /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7A29C3016A00D1C44F /* KeychainManager.swift */; };
-		18E3EE7D29C30D0800D1C44F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7C29C30D0800D1C44F /* Profile.swift */; };
+		18E3EE7D29C30D0800D1C44F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7C29C30D0800D1C44F /* UserModel.swift */; };
 		18E3EE7F29C30F7C00D1C44F /* UIViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE7E29C30F7C00D1C44F /* UIViewController + Alert.swift */; };
 		18E3EE8129C4858900D1C44F /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE8029C4858900D1C44F /* MainTabBarController.storyboard */; };
 		18E3EE8329C48DA200D1C44F /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE8229C48DA200D1C44F /* UserDefaultsService.swift */; };
@@ -36,6 +36,7 @@
 		18E3EE9A29C83AA300D1C44F /* DialoguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE9829C83AA300D1C44F /* DialoguesViewController.swift */; };
 		18E3EE9B29C83AA300D1C44F /* DialoguesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3EE9929C83AA300D1C44F /* DialoguesViewController.xib */; };
 		18E3EE9D29C84A8900D1C44F /* FigmaNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EE9C29C84A8900D1C44F /* FigmaNavigationBar.swift */; };
+		18E3EEA129CB0AED00D1C44F /* ValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EEA029CB0AED00D1C44F /* ValidEmail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +77,7 @@
 		18E3EE7529C1A4CB00D1C44F /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		18E3EE7829C2DE9F00D1C44F /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		18E3EE7A29C3016A00D1C44F /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
-		18E3EE7C29C30D0800D1C44F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		18E3EE7C29C30D0800D1C44F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		18E3EE7E29C30F7C00D1C44F /* UIViewController + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Alert.swift"; sourceTree = "<group>"; };
 		18E3EE8029C4858900D1C44F /* MainTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBarController.storyboard; sourceTree = "<group>"; };
 		18E3EE8229C48DA200D1C44F /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		18E3EE9829C83AA300D1C44F /* DialoguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialoguesViewController.swift; sourceTree = "<group>"; };
 		18E3EE9929C83AA300D1C44F /* DialoguesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialoguesViewController.xib; sourceTree = "<group>"; };
 		18E3EE9C29C84A8900D1C44F /* FigmaNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaNavigationBar.swift; sourceTree = "<group>"; };
+		18E3EEA029CB0AED00D1C44F /* ValidEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidEmail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				18E3EE2E29BEEBFC00D1C44F /* SingInViewController.swift */,
-				18E3EE7C29C30D0800D1C44F /* Profile.swift */,
+				18E3EE7C29C30D0800D1C44F /* UserModel.swift */,
 				18E3EE3029BEEBFC00D1C44F /* Main.storyboard */,
 			);
 			path = SingInViewController;
@@ -227,6 +229,7 @@
 				18E3EE7E29C30F7C00D1C44F /* UIViewController + Alert.swift */,
 				18E3EE8229C48DA200D1C44F /* UserDefaultsService.swift */,
 				18E3EE9C29C84A8900D1C44F /* FigmaNavigationBar.swift */,
+				18E3EEA029CB0AED00D1C44F /* ValidEmail.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -408,7 +411,7 @@
 				18E3EE9629C83A6500D1C44F /* BasketViewController.swift in Sources */,
 				18E3EE6029C1976C00D1C44F /* LoginViewController.swift in Sources */,
 				18E3EE6629C19C0C00D1C44F /* MainTabBarController.swift in Sources */,
-				18E3EE7D29C30D0800D1C44F /* Profile.swift in Sources */,
+				18E3EE7D29C30D0800D1C44F /* UserModel.swift in Sources */,
 				18E3EE9229C83A0800D1C44F /* LikeListViewController.swift in Sources */,
 				18E3EE2F29BEEBFC00D1C44F /* SingInViewController.swift in Sources */,
 				18E3EE7F29C30F7C00D1C44F /* UIViewController + Alert.swift in Sources */,
@@ -419,6 +422,7 @@
 				18E3EE9A29C83AA300D1C44F /* DialoguesViewController.swift in Sources */,
 				18E3EE9D29C84A8900D1C44F /* FigmaNavigationBar.swift in Sources */,
 				18E3EE7B29C3016A00D1C44F /* KeychainManager.swift in Sources */,
+				18E3EEA129CB0AED00D1C44F /* ValidEmail.swift in Sources */,
 				18E3EE8329C48DA200D1C44F /* UserDefaultsService.swift in Sources */,
 				18E3EE6929C19EA100D1C44F /* UIColor+.swift in Sources */,
 			);
