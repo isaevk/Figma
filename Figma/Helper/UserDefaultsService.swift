@@ -1,55 +1,54 @@
 //
-//  File.swift
+//  UserDefaultsService.swift
 //  Figma
 //
 //  Created by Kirill Dev on 17.03.2023.
 //
 
-import Foundation
+import UIKit
 
 //MARK: - UserDefaultsService
-
-//final class UserDefaultsService {
-//
-//  static var instance = UserDefaultsService()
-//
-//  lazy var defaults = UserDefaults.standard
-//
-//  func set(value: Any?, key: String) {
-//    defaults.set(value, forKey: key)
-//  }
-//
-//  func get<T>(key: String) -> T? {
-//    let value = defaults.object(forKey: key)
-//    return value as? T
-//  }
-//
-//  func remove(key: String) {
-//    defaults.removeObject(forKey: key)
-//  }
-//}
-
 
 final class UserDefaultsService {
   
   private enum SettingsKeys: String {
     case userModel
+    case avatar
   }
   
   static var userModel: UserModel! {
     get {
       guard let savedData = UserDefaults.standard.object(forKey: SettingsKeys.userModel.rawValue) as? Data,
-            let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? UserModel else { return nil}
+            let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? UserModel else { return nil }
       return decodedModel
     }
     
     set {
       let defaults = UserDefaults.standard
-      let key = SettingsKeys.userModel.rawValue
+      let keyModel = SettingsKeys.userModel.rawValue
       
       if let userModel = newValue {
         if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: userModel, requiringSecureCoding: false) {
-          defaults.set(savedData, forKey: key)
+          defaults.set(savedData, forKey: keyModel)
+        }
+      }
+    }
+  }
+  
+  static var userAvatar: UIImage! {
+    get {
+      guard let savedData = UserDefaults.standard.object(forKey: SettingsKeys.avatar.rawValue) as? Data,
+            let decodedImage = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? UIImage else { return nil }
+      return decodedImage
+    }
+    
+    set {
+      let defaults = UserDefaults.standard
+      let keyAvatar = SettingsKeys.avatar.rawValue
+      
+      if let userAvatar = newValue {
+        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: userAvatar, requiringSecureCoding: false) {
+          defaults.set(savedData, forKey: keyAvatar)
         }
       }
     }

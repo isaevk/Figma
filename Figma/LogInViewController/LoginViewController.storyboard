@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -61,17 +62,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9u-zs-5dL">
-                                <rect key="frame" x="309" y="329" width="20" height="20"/>
+                                <rect key="frame" x="304" y="327" width="32" height="24"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="4bo-Hh-eT0"/>
-                                    <constraint firstAttribute="width" constant="20" id="drM-nt-e8e"/>
+                                    <constraint firstAttribute="height" constant="24" id="4bo-Hh-eT0"/>
+                                    <constraint firstAttribute="width" constant="32" id="drM-nt-e8e"/>
                                 </constraints>
-                                <color key="tintColor" red="0.36078431370000003" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="eye.slash" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
                                     <action selector="hidePasswordAction:" destination="BQb-mB-Amx" eventType="touchUpInside" id="CXa-ZI-M6M"/>
                                 </connections>
@@ -80,7 +81,7 @@
                         <viewLayoutGuide key="safeArea" id="KXH-Vc-lmh"/>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="b9u-zs-5dL" firstAttribute="top" secondItem="PCk-58-FOI" secondAttribute="bottom" constant="35" id="8wD-3z-0oF"/>
+                            <constraint firstItem="b9u-zs-5dL" firstAttribute="top" secondItem="PCk-58-FOI" secondAttribute="bottom" constant="33" id="8wD-3z-0oF"/>
                             <constraint firstItem="PCk-58-FOI" firstAttribute="top" secondItem="a0o-ot-sES" secondAttribute="bottom" constant="86" id="9Yu-el-2gh"/>
                             <constraint firstItem="KXH-Vc-lmh" firstAttribute="trailing" secondItem="XCh-bT-Zem" secondAttribute="trailing" constant="52" id="A4W-Qp-zj2"/>
                             <constraint firstItem="a0o-ot-sES" firstAttribute="top" secondItem="KXH-Vc-lmh" secondAttribute="top" constant="87" id="DPy-E1-orM"/>
@@ -91,7 +92,7 @@
                             <constraint firstItem="PCk-58-FOI" firstAttribute="leading" secondItem="KXH-Vc-lmh" secondAttribute="leading" constant="52" id="bDV-Tc-Brq"/>
                             <constraint firstItem="XCh-bT-Zem" firstAttribute="top" secondItem="iMn-jK-cfs" secondAttribute="bottom" constant="101" id="iRs-pL-cX4"/>
                             <constraint firstItem="KXH-Vc-lmh" firstAttribute="trailing" secondItem="iMn-jK-cfs" secondAttribute="trailing" constant="52" id="r1l-jQ-HlQ"/>
-                            <constraint firstItem="KXH-Vc-lmh" firstAttribute="trailing" secondItem="b9u-zs-5dL" secondAttribute="trailing" constant="64" id="vZF-Tq-dNj"/>
+                            <constraint firstItem="KXH-Vc-lmh" firstAttribute="trailing" secondItem="b9u-zs-5dL" secondAttribute="trailing" constant="57" id="vZF-Tq-dNj"/>
                             <constraint firstItem="a0o-ot-sES" firstAttribute="leading" secondItem="KXH-Vc-lmh" secondAttribute="leading" constant="104" id="zJl-1W-bQn"/>
                             <constraint firstItem="KXH-Vc-lmh" firstAttribute="trailing" secondItem="PCk-58-FOI" secondAttribute="trailing" constant="52" id="zQ7-sA-Tdi"/>
                         </constraints>
@@ -108,7 +109,4 @@
             <point key="canvasLocation" x="977.86259541984725" y="3.5211267605633805"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="eye.slash" catalog="system" width="128" height="84"/>
-    </resources>
 </document>
