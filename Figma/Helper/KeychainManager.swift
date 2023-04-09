@@ -7,6 +7,8 @@
 
 import UIKit
 
+//MARK: - Keychain Manager
+
 final class KeychainManager {
   
   enum KeychainError: Error {

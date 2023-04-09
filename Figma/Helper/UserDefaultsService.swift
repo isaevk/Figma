@@ -7,25 +7,25 @@
 
 import UIKit
 
-//MARK: - UserDefaultsService
+//MARK: - User Defaults Service
 
 final class UserDefaultsService {
   
   private enum SettingsKeys: String {
-    case userModel
+    case fullName
     case avatar
   }
   
-  static var userModel: UserModel! {
+  static var userModel: UserModel? {
     get {
-      guard let savedData = UserDefaults.standard.object(forKey: SettingsKeys.userModel.rawValue) as? Data,
-            let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? UserModel else { return nil }
+      guard let savedData = UserDefaults.standard.object(forKey: SettingsKeys.fullName.rawValue) as? Data,
+            let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? UserModel else  { return  nil }
       return decodedModel
     }
-    
+
     set {
       let defaults = UserDefaults.standard
-      let keyModel = SettingsKeys.userModel.rawValue
+      let keyModel = SettingsKeys.fullName.rawValue
       
       if let userModel = newValue {
         if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: userModel, requiringSecureCoding: false) {
@@ -35,10 +35,10 @@ final class UserDefaultsService {
     }
   }
   
-  static var userAvatar: UIImage! {
+  static var userAvatar: UIImage? {
     get {
       guard let savedData = UserDefaults.standard.object(forKey: SettingsKeys.avatar.rawValue) as? Data,
-            let decodedImage = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? UIImage else { return nil }
+            let decodedImage = try? NSKeyedUnarchiver.unarchivedObject(ofClass: UIImage.self, from: savedData) else { return nil }
       return decodedImage
     }
     
