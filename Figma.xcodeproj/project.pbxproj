@@ -187,7 +187,7 @@
 				188D4CDE29DADBC3009D974D /* Model */,
 				188D4CD629DAD977009D974D /* ViewModels */,
 				188D4CD529DAD954009D974D /* ViewControllers */,
-				188D4CD429DAD925009D974D /* Storyboard */,
+				188D4CD429DAD925009D974D /* Storyboards */,
 				188D4CD729DAD9CF009D974D /* AuthorizationCoordinator */,
 			);
 			path = Authtorization;
@@ -217,13 +217,13 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		188D4CD429DAD925009D974D /* Storyboard */ = {
+		188D4CD429DAD925009D974D /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				18E3EE3029BEEBFC00D1C44F /* SignInViewController.storyboard */,
 				187268B129D3F874007252FF /* LogInViewController.storyboard */,
 			);
-			path = Storyboard;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		188D4CD529DAD954009D974D /* ViewControllers */ = {

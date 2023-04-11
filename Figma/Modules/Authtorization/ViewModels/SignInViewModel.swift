@@ -53,6 +53,7 @@ final class SignInViewModel {
                                lastName: lastNameTrimmingText,
                                email: emailTrimmingText,
                                avatar: nil)
+    
     UserDefaultsService.userModel = userObject
     
     // Save Keychain

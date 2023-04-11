@@ -13,10 +13,10 @@ final class LogInViewController: UIViewController {
   var viewModel: LogInViewModel!
   
   // MARK: - Private Properties
-  @IBOutlet private weak var emailTxtField: UITextField!
-  @IBOutlet private weak var passwordTxtField: UITextField!
-  @IBOutlet private weak var hidePasswordButton: UIButton!
-  @IBOutlet private weak var loginButton: UIButton!
+  @IBOutlet private var emailTxtField: UITextField!
+  @IBOutlet private var passwordTxtField: UITextField!
+  @IBOutlet private var hidePasswordButton: UIButton!
+  @IBOutlet private var loginButton: UIButton!
   
   // MARK: - Override Methods
   override func viewDidLoad() {

@@ -15,7 +15,7 @@ final class ProfileViewController: UIViewController {
   
   // MARK: - Private Properties
   private let cellsMenu = Sourse.makeCell()
-  @IBOutlet private weak var tableView: UITableView!
+  @IBOutlet private var tableView: UITableView!
   
   // MARK: - Override Methods
   override func viewDidLoad() {
@@ -51,6 +51,7 @@ extension ProfileViewController: UITableViewDataSource {
     switch indexPath.section {
     case 0:
       guard let infoCell = tableView.dequeueReusableCell(withIdentifier: "ProfileInfoCell", for: indexPath) as? ProfileInfoTableViewCell else { fatalError() }
+      
       infoCell.showPickerViewController = { [weak self]   in
         self?.showImagePickerControllerActionSheet()
       }
@@ -58,8 +59,10 @@ extension ProfileViewController: UITableViewDataSource {
       
     case 1:
       guard let menuCell = tableView.dequeueReusableCell(withIdentifier: "ProfileMenuCell", for: indexPath) as? ProfileMenuTableViewCell else { fatalError() }
+      
       menuCell.configuration(menuCell: cellsMenu[indexPath.row])
       return menuCell
+      
     default: return UITableViewCell()
     }
   }

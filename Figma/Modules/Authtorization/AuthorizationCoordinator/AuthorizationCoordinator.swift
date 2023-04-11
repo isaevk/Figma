@@ -26,8 +26,10 @@ final class AuthorizationCoordinator: NSObject, Coordinator, UINavigationControl
     let storyboard = UIStoryboard.init(name: "SignInViewController", bundle: .none)
     guard let signInViewController = storyboard.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else { return }
     let signInViewModel = SignInViewModel()
+    
     signInViewModel.coordinator = self
     signInViewController.viewModel = signInViewModel
+    
     navigationController.pushViewController(signInViewController, animated: true)
   }
   
@@ -36,8 +38,10 @@ final class AuthorizationCoordinator: NSObject, Coordinator, UINavigationControl
     let storyboard = UIStoryboard.init(name: "LogInViewController", bundle: .none)
     guard let logInViewController = storyboard.instantiateViewController(withIdentifier: "LogInViewController") as? LogInViewController else { return }
     let logInViewModel = LogInViewModel()
+    
     logInViewModel.coordinator = self
     logInViewController.viewModel = logInViewModel
+    
     navigationController.navigationBar.isHidden = true
     navigationController.pushViewController(logInViewController, animated: true)
   }

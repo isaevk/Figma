@@ -9,23 +9,23 @@ import UIKit
 
 //MARK: - Image Downloader Manager
 
-final class ImageDownloaderManager{
+final class ImageDownloaderManager {
+  static let shared = ImageDownloaderManager()
+  private init() {}
+  
+  func fetchImage(from imageUrl: String?, with completion: @escaping (Result<UIImage, Error>) -> Void) {
+    guard let stringUrl = imageUrl, let url = URL(string: stringUrl) else { return }
     
-    static let shared = ImageDownloaderManager()
-    private init() {}
-    
-    func fetchImage(from imageUrl: String?, with completion: @escaping(UIImage) -> Void) {
-        guard let stringUrl = imageUrl else {return}
-        guard let url = URL(string: stringUrl) else {return}
-        URLSession.shared.dataTask(with: url) { data, responce, error in
-            if let error = error {
-                print(error)
-            }
-            if let data = data, let image = UIImage(data: data) {
-                DispatchQueue.main.async {
-                    completion(image)
-                }
-            }
-        }.resume()
-    }
+    URLSession.shared.dataTask(with: url) { (data, responce, error) in
+      if let error = error {
+        completion(.failure(error))
+      }
+      
+      if let data = data, let image = UIImage(data: data) {
+        DispatchQueue.main.async {
+          completion(.success(image))
+        }
+      }
+    }.resume()
+  }
 }

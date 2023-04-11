@@ -20,9 +20,11 @@ final class HomeCoordinator: Coordinator {
   func start() {
     let homeViewController = HomeViewController.instantiate()
     let homeViewModel = HomeViewModel()
+    
     homeViewController.coordinator = self
     homeViewController.viewModel = homeViewModel
     homeViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "house"), tag: 0)
+    
     navigationController.pushViewController(homeViewController, animated: false)
   }
 }

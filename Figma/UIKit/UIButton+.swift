@@ -12,6 +12,7 @@ import UIKit
 extension UIButton {
   func createProfileInfoButton(image: UIImage, title: String) {
     var configuration: UIButton.Configuration = .filled()
+    
     configuration.image = image
     configuration.title = title
     configuration.cornerStyle = .capsule
@@ -26,6 +27,7 @@ extension UIButton {
       muttableAttribute.font = .boldSystemFont(ofSize: 15)
       return muttableAttribute
     }
+    
     self.configuration = configuration
   }
 }

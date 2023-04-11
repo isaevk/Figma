@@ -16,7 +16,9 @@ final class AlertService {
                         actions: [UIAlertAction] = [UIAlertAction(title: "Ok", style: .cancel)],
                         handler: ((UIAlertAction) -> Void)? = nil,
                         textFields: [((UITextField) -> Void)] = []) {
+    
     let alert = UIAlertController(title: title, message: message, preferredStyle: style)
+    
     if actions.isEmpty {
       alert.addAction(UIAlertAction(title: "Ok", style: .default))
     } else {
@@ -24,9 +26,11 @@ final class AlertService {
         alert.addAction(action)
       }
     }
+    
     for textField in textFields {
       alert.addTextField(configurationHandler: textField)
     }
+    
     if let topVC = UIApplication.getTopViewController() {
       topVC.present(alert, animated: true)
     }

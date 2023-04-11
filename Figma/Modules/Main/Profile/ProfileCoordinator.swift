@@ -19,9 +19,11 @@ final class ProfileCoordinator: Coordinator {
   func start() {
     let profileViewController = ProfileViewController.instantiate()
     let profileViewModel = ProfileViewModel()
+    
     profileViewController.coordinator = self
     profileViewController.viewModel = profileViewModel
     profileViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "person"), tag: 4)
+    
     navigationController.pushViewController(profileViewController, animated: true)
   }
 }

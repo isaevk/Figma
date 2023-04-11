@@ -53,12 +53,11 @@ final class KeychainManager {
       kSecMatchLimit as String: kSecMatchLimitOne
     ]
     
-    
     var result: AnyObject?
     let status = SecItemCopyMatching(query as CFDictionary, &result)
     
-    
     print("Read status: \(status)")
+    
     return result as? Data
   }
 }

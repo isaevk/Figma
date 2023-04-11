@@ -58,10 +58,11 @@ final class MainTabBarController: UITabBarController {
                                   cornerRadius: hieght / 2)
 
     roundLayer.path = bezierPath.cgPath
+    roundLayer.fillColor = UIColor(hex: "#ffFFFFFF")?.cgColor
+    
     tabBar.layer.insertSublayer(roundLayer, at: 0)
     tabBar.itemWidth = wigth / 5
     tabBar.itemPositioning = .fill
-    roundLayer.fillColor = UIColor(hex: "#ffFFFFFF")?.cgColor
     tabBar.unselectedItemTintColor = UIColor(hex: "#909090C8")
     tabBar.tintColor = UIColor(hex: "#737297FF")
     tabBar.selectionIndicatorImage = UIImage(named: "ellipse")

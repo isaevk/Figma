@@ -99,9 +99,16 @@ extension LatestCollectionViewCell: SelfConfiguringCell {
   
   // MARK: - Configuration
   func configure(with item: Item) {
-    ImageDownloaderManager.shared.fetchImage(from: item.image_url)  { image  in
-      self.productImageView.image = image
+    
+    ImageDownloaderManager.shared.fetchImage(from: item.image_url) { result in
+      switch result {
+      case .success(let image):
+        self.productImageView.image = image
+      case .failure:
+        self.productImageView.image = UIImage(named: "not.image")
+      }
     }
+    
     categoryLabel.text = item.category
     nameProductLabel.text = item.name
     priceLabel.text = "$ \(item.price)"

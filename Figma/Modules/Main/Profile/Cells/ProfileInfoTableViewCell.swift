@@ -98,8 +98,10 @@ final class ProfileInfoTableViewCell: UITableViewCell {
     
     guard let firstName = UserDefaultsService.userModel?.firstName,
           let lastName = UserDefaultsService.userModel?.lastName else { return }
+    
     let fullName = "\(firstName) \(lastName)"
     fullNameLabel.text = fullName
+    
     changePhotoButton.addTarget(self, action: #selector(actionChangePhoto), for: .touchUpInside)
   }
 }

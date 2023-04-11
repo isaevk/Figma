@@ -13,11 +13,11 @@ final class SignInViewController: UIViewController {
   var viewModel: SignInViewModel!
 
   // MARK: - Private Properties
-  @IBOutlet private weak var firstNameTxtField: UITextField!
-  @IBOutlet private weak var lastNameTxtField: UITextField!
-  @IBOutlet private weak var emailTxtField: UITextField!
-  @IBOutlet private weak var passwordTxtField: UITextField!
-  @IBOutlet private weak var signInButton: UIButton!
+  @IBOutlet private var firstNameTxtField: UITextField!
+  @IBOutlet private var lastNameTxtField: UITextField!
+  @IBOutlet private var emailTxtField: UITextField!
+  @IBOutlet private var passwordTxtField: UITextField!
+  @IBOutlet private var signInButton: UIButton!
   
   // MARK: - IBAction
   @IBAction private func signinAction(_ sender: Any) {

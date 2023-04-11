@@ -17,7 +17,7 @@ final class ChatsCoordinator: Coordinator {
   }
   
   func start() {
-    let chatsViewController = ChatsViewController.instantiate()
+    var chatsViewController = ChatsViewController.instantiate()
     chatsViewController.coordinator = self
     chatsViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "dialog"), tag: 3)
     navigationController.pushViewController(chatsViewController, animated: true)

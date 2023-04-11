@@ -8,7 +8,7 @@
 import UIKit
 
 final class LikeListViewController: UIViewController {
-  var coordinator: LikeCoordinator!
+  var coordinator: LikeCoordinator?
 }
 
 extension LikeListViewController: Storyboarded { }

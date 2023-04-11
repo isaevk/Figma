@@ -14,9 +14,9 @@ final class HomeViewController: UIViewController {
   var coordinator: HomeCoordinator!
   
   // MARK: - Private Properties
-  @IBOutlet private weak var searchBar: UISearchBar!
-  @IBOutlet private weak var changeLocationButton: UIButton!
-  @IBOutlet private weak var collectionView: UICollectionView!
+  @IBOutlet private var searchBar: UISearchBar!
+  @IBOutlet private var changeLocationButton: UIButton!
+  @IBOutlet private var collectionView: UICollectionView!
   
   private var sections = Bundle.main.decode([Section].self, from: "shop.json")
   private var  dataSource: UICollectionViewDiffableDataSource<Section, Item>?
@@ -41,6 +41,7 @@ final class HomeViewController: UIViewController {
     guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseIdentifier, for: indexPath) as? T else {
       fatalError("Unable to dequeue \(cellType)")
     }
+    
     cell.configure(with: item)
     return cell
   }
@@ -48,6 +49,7 @@ final class HomeViewController: UIViewController {
   // MARK: - Create Data Source
   private func createDataSource() {
     dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView) { (collectionView, indexPath, item) in
+      
       switch self.sections[indexPath.section].type {
       case "Flash sale":
         return self.configure(SaleCollectionViewCell.self, with: item, for: indexPath)
@@ -56,7 +58,8 @@ final class HomeViewController: UIViewController {
       }
     }
     
-    dataSource?.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in
+    dataSource?.supplementaryViewProvider = { [weak self] (collectionView, kind, indexPath) in
+      
       guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseIdentifier, for: indexPath) as? SectionHeader else { return nil }
       
       guard let firstItem = self?.dataSource?.itemIdentifier(for: indexPath) else { return nil }
@@ -82,7 +85,7 @@ final class HomeViewController: UIViewController {
   
   // MARK: - Create Compositional Layout
   private func createCompositionalLayout() -> UICollectionViewCompositionalLayout {
-    let layout = UICollectionViewCompositionalLayout { sectionIndex,  layoutEnviroment in
+    let layout = UICollectionViewCompositionalLayout { (sectionIndex, layoutEnviroment) in
       let section = self.sections[sectionIndex]
       
       switch section.type {
@@ -96,36 +99,45 @@ final class HomeViewController: UIViewController {
     let configuration = UICollectionViewCompositionalLayoutConfiguration()
     configuration.interSectionSpacing = 10
     layout.configuration = configuration
+    
     return layout
   }
   
   // MARK: - Create Latest Section
   private func createLatestSection(using section: Section) -> NSCollectionLayoutSection {
     let itemSize = NSCollectionLayoutSize(widthDimension: .estimated(124), heightDimension: .estimated(159))
+    
     let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
     layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 15)
+    
     let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.35), heightDimension: .estimated(159))
     let layoutGroup = NSCollectionLayoutGroup.horizontal(layoutSize: layoutGroupSize, subitems: [layoutItem])
+    
     let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
     layoutSection.orthogonalScrollingBehavior = .continuous
     
     let layoutSectionHeader = createSectionHeader()
     layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
+    
     return layoutSection
   }
   
   // MARK: - Create Latest Section
   private func createSaleSection(using section: Section) -> NSCollectionLayoutSection {
     let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+    
     let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
     layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5)
+    
     let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.6), heightDimension: .estimated(221))
     let layoutGroup = NSCollectionLayoutGroup.vertical(layoutSize: layoutGroupSize, subitems: [layoutItem])
+    
     let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
     layoutSection.orthogonalScrollingBehavior = .continuous
     
     let layoutSectionHeader = createSectionHeader()
     layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
+    
     return layoutSection
   }
   
@@ -133,6 +145,7 @@ final class HomeViewController: UIViewController {
   private func createSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
     let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .estimated(30))
     let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSectionHeaderSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+    
     return layoutSectionHeader
   }
 }
