@@ -7,6 +7,8 @@
 
 import UIKit
 
+//MARK: - Keychain Manager
+
 final class KeychainManager {
   
   enum KeychainError: Error {
@@ -51,12 +53,11 @@ final class KeychainManager {
       kSecMatchLimit as String: kSecMatchLimitOne
     ]
     
-    
     var result: AnyObject?
-     let status = SecItemCopyMatching(query as CFDictionary, &result) 
-    
+    let status = SecItemCopyMatching(query as CFDictionary, &result)
     
     print("Read status: \(status)")
+    
     return result as? Data
   }
 }
